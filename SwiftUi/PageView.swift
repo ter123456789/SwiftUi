@@ -1,8 +1,13 @@
-//
-//  PageView.swift
-//  SwiftUi
-//
-//  Created by Thongpop choojit on 28/4/2569 BE.
-//
+import SwiftUI
 
-import Foundation
+struct PageView<Page: View>: View {
+    var pages: [Page]
+    
+    var body: some View {
+        PageViewController(pages: pages).aspectRatio(3 / 2,contentMode: .fit)
+    }
+}
+
+#Preview {
+    PageView(pages: ModelData().features.map { FeatureCard(landmark: $0) })
+}

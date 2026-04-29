@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1001,
+        "name": "Turtle Rock",
+        "park": "Joshua Tree National Park",
+        "state": "California",
+        "description": "Sample landmark used for SwiftUI tutorial.",
+        "isFavorite": true,
+        "isFeatured": true,
+        "category": "Mountains",
+        "imageName": "Turtle_Rock",
+        "coordinates": {
+            "latitude": 34.011,
+            "longitude": -116.166
+        }
+    },
+    {
+        "id": 1002,
+        "name": "Silver Salmon Creek",
+        "park": "Lake Clark National Park and Preserve",
+        "state": "Alaska",
+        "description": "Sample landmark used for SwiftUI tutorial.",
+        "isFavorite": false,
+        "isFeatured": true,
+        "category": "Lakes",
+        "imageName": "Silver_Salmon_creek",
+        "coordinates": {
+            "latitude": 59.93,
+            "longitude": -152.7
+        }
+    },
+    {
+        "id": 1003,
+        "name": "Charley Rivers",
+        "park": "Yukon-Charley National Preserve",
+        "state": "Alaska",
+        "description": "Sample landmark used for SwiftUI tutorial.",
+        "isFavorite": false,
+        "isFeatured": false,
+        "category": "Rivers",
+        "imageName": "Charley_Rivers",
+        "coordinates": {
+            "latitude": 65.33,
+            "longitude": -142.89
+        }
+    },
+    {
+        "id": 1004,
+        "name": "Chilkoot Trail",
+        "park": "Klondike Gold Rush National Historical Park",
+        "state": "Alaska",
+        "description": "Sample landmark used for SwiftUI tutorial.",
+        "isFavorite": true,
+        "isFeatured": false,
+        "category": "Mountains",
+        "imageName": "Chilkoot_Trail",
+        "coordinates": {
+            "latitude": 59.56,
+            "longitude": -135.33
+        }
+    }
+]

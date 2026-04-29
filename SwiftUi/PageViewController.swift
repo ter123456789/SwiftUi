@@ -1,8 +1,17 @@
-//
-//  PageViewController.swift
-//  SwiftUi
-//
-//  Created by Thongpop choojit on 28/4/2569 BE.
-//
+import SwiftUI
+import UIKit
 
-import Foundation
+struct PageViewController<Page: View>: UIViewControllerRepresentable {
+    var pages: [Page]
+    
+    func makeUIViewController(context: Context) -> UIPageViewController {
+        let pageViewController = UIPageViewController(
+            transitionStyle: .scroll, navigationOrientation: .horizontal
+        )
+        return pageViewController
+    }
+    
+    func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
+        pageViewController.setViewControllers([UIHostingController(rootView: pages[0])],direction: .forward, animated: true)
+    }
+}
